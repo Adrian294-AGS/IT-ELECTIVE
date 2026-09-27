@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Student Multimedia Showcase: an evening of student-made films, visual stories, and interactive digital experiences.">
+    <title>Student Multimedia Showcase | Northstar Arts Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Student Multimedia Showcase home">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>Northstar <strong>Showcase</strong></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Open navigation menu</span>
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#screening">Screening</a>
+          <a href="#visit">Plan your visit</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Northstar Arts Lab · 18 May 2025</p>
+            <h1 id="hero-title">Ideas that move.<br><em>Stories that stay.</em></h1>
+            <p class="hero-intro">Meet the next wave of makers at an evening of student films, visual stories, and playful digital worlds.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Explore the projects <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="https://www.aiga.org/" target="_blank" rel="noopener noreferrer">About our creative community <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Abstract collage representing student creativity">
+            <div class="hero-orb orb-one"></div>
+            <div class="hero-orb orb-two"></div>
+            <div class="hero-card card-back"><span>CREATE<br>BRAVELY</span></div>
+            <div class="hero-card card-front">
+              <span class="card-label">MM / 25</span>
+              <span class="card-title">A night<br>of new<br><i>perspectives.</i></span>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <span class="art-note note-top">student-led / 01</span>
+            <span class="art-note note-bottom">EST. 2025</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / The exhibition</p>
+              <h2 id="projects-title">A snapshot of<br><em>what’s playing.</em></h2>
+            </div>
+            <p class="section-intro">From hand-built interfaces to short films, these works turn big questions into experiences you can see, hear, and feel.</p>
+          </div>
+          <div class="filter-bar" aria-label="Filter projects">
+            <span class="filter-label">Browse by medium</span>
+            <div class="filter-buttons" role="group" aria-label="Project medium filters">
+              <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work</button>
+              <button class="filter-button" type="button" data-filter="film" aria-pressed="false">Film & video</button>
+              <button class="filter-button" type="button" data-filter="interactive" aria-pressed="false">Interactive</button>
+              <button class="filter-button" type="button" data-filter="visual" aria-pressed="false">Visual story</button>
+            </div>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-wide" data-category="film">
+              <figure class="project-image">
+                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1400&q=85" alt="A film camera pointed toward a bright cinema screen">
+                <figcaption>Frame by frame · Short film</figcaption>
+              </figure>
+              <div class="project-meta"><span>01</span><span>Film & video</span></div>
+              <h3>Between the cuts</h3>
+              <p>A quiet documentary about the spaces between a story’s loudest moments.</p>
+            </article>
+            <article class="project-card" data-category="interactive">
+              <figure class="project-image">
+                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=900&q=85" alt="Colorful app interface sketches arranged on a desk">
+                <figcaption>Prototype / Interactive experience</figcaption>
+              </figure>
+              <div class="project-meta"><span>02</span><span>Interactive</span></div>
+              <h3>Common ground</h3>
+              <p>An audio map that lets neighbors share the sounds of home.</p>
+            </article>
+            <article class="project-card" data-category="visual">
+              <figure class="project-image">
+                <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=900&q=85" alt="Vivid abstract painted shapes in pink, yellow, and blue">
+                <figcaption>Colour study · Visual story</figcaption>
+              </figure>
+              <div class="project-meta"><span>03</span><span>Visual story</span></div>
+              <h3>Soft signals</h3>
+              <p>A visual essay on how colour can carry a memory across distance.</p>
+            </article>
+          </div>
+          <p class="empty-state" hidden>No projects match this filter yet. Try another medium.</p>
+        </div>
+      </section>
+
+      <section id="screening" class="section screening-section" aria-labelledby="screening-title">
+        <div class="container screening-grid">
+          <div class="screening-copy">
+            <p class="eyebrow">02 / In the spotlight</p>
+            <h2 id="screening-title">Press play on<br><em>possibility.</em></h2>
+            <p>Get a taste of the playful, experimental energy you’ll find across the showcase. This short CC0 clip is a placeholder for our student reel.</p>
+            <a class="text-link" href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" target="_blank" rel="noopener noreferrer">Open the CC0 video source <span aria-hidden="true">↗</span></a>
+          </div>
+          <figure class="video-frame">
+            <video controls preload="metadata" poster="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=85">
+              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">Open the video file</a>.
+            </video>
+            <figcaption>Preview reel · Creative Commons Zero (CC0) sample media</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="visit" class="visit-section" aria-labelledby="visit-title">
+        <div class="container visit-inner">
+          <div>
+            <p class="eyebrow">03 / Save your seat</p>
+            <h2 id="visit-title">Come curious.<br><em>Leave inspired.</em></h2>
+          </div>
+          <div class="visit-details">
+            <p><strong>Friday, 18 May 2025</strong><br>Doors at 18:30 · First screening at 19:00<br>Northstar Arts Lab, Studio 4</p>
+            <a class="button button-light" href="mailto:hello@northstar.example?subject=Showcase RSVP">Reserve a free place <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">✦</span><span>Northstar <strong>Showcase</strong></span></a>
+          <p class="footer-note">A student-made multimedia exhibition<br>for everyone who stays curious.</p>
+        </div>
+        <div class="credits">
+          <p class="eyebrow">Media credits</p>
+          <p>Photography via <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>, used under the Unsplash License. Video sample from <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Audio_and_video_delivery" target="_blank" rel="noopener noreferrer">MDN’s CC0 media examples</a>.</p>
+        </div>
+        <p class="copyright">© 2025 Northstar Arts Lab</p>
+      </div>
+    </footer>
+  </body>
+</html>
